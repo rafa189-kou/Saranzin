@@ -1,3 +1,3 @@
 # Saranzin
 
-Download: https://github.com/rafa189-kou/Saranzin.git
+Download: https://rafa189-kou.github.io/Saranzin/

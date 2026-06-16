@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contato - Blog DO RAFAEL</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#f4f6fa,#e8eefc);
+    min-height:100vh;
+}
+
+header{
+    background:linear-gradient(135deg,#ff3b5c,#6d28d9);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+.contato{
+    max-width:900px;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.contato h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#6d28d9;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+textarea{
+    min-height:150px;
+    resize:vertical;
+}
+
+button{
+    background:linear-gradient(135deg,#ff3b5c,#6d28d9);
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+.info{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f8f9ff;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.card h3{
+    color:#6d28d9;
+    margin-bottom:10px;
+}
+
+.whatsapp{
+    display:block;
+    width:max-content;
+    margin:30px auto 0;
+    padding:15px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#666;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📞 Entre em Contato</h1>
+    <p>Será um prazer falar com você!</p>
+</header>
+
+<section class="contato">
+
+    <h2>Envie sua Mensagem</h2>
+
+    <form>
+        <input type="text" placeholder="Seu Nome" required>
+
+        <input type="email" placeholder="Seu E-mail" required>
+
+        <input type="text" placeholder="Assunto">
+
+        <textarea placeholder="Digite sua mensagem..." required></textarea>
+
+        <button type="submit">
+            Enviar Mensagem
+        </button>
+    </form>
+
+    <div class="info">
+
+        <div class="card">
+            <h3>📧 E-mail</h3>
+            <p>215642@upf.br</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Telefone</h3>
+            <p>(54) 984239513</p>
+        </div>
+
+        <div class="card">
+            <h3>📍 Endereço</h3>
+            <p>Sananduva - RS</p>
+        </div>
+
+    </div>

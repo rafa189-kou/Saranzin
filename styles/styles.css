@@ -1,0 +1,855 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6fa;
+    color: #222;
+    line-height: 1.6;
+    transition: .4s;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .menu{
+    background-color: #1e1e1e;
+}
+
+.dark-mode #titulo1,
+.dark-mode #titulo2{
+    color: white;
+}
+
+.dark-mode .post-card{
+    background-color: #1f1f1f;
+}
+
+.dark-mode footer{
+    background-color: #1e1e1e;
+}
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+#titulo1{
+    text-align: center;
+    font-size: 4rem;
+    padding: 40px 20px;
+
+    background: linear-gradient(135deg,#81e027,#f10000);
+
+    color: white;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   MENU
+========================== */
+
+.menu{
+    background: white;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    list-style: none;
+}
+
+.menu a{
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: linear-gradient(
+        135deg,
+        #948e9e,
+        #f10000
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 4px 12px hsla(261, 44%, 20%, 0.25);
+
+    transition: all .3s ease;
+}
+
+.menu a:hover{
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(39, 55, 88, 0.4);
+}
+
+.menu a:active{
+    transform: scale(.95);
+}
+
+/* ==========================
+   TÍTULO SEÇÃO
+========================== */
+
+#titulo2{
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    color: rgba(39, 55, 88, 0.4);;
+
+    font-size: 2.2rem;
+}
+
+/* ==========================
+   GALERIA
+========================== */
+
+.imagens2{
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    padding: 20px;
+}
+
+.imagens2 img{
+    width: 320px;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+
+    transition: .3s;
+}
+
+.imagens2 img:hover{
+    transform: translateY(-5px);
+}
+
+/* ==========================
+   CARD ESTILO BLOG
+========================== */
+
+.post-card{
+    background: white;
+
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(39, 55, 88, 0.4);
+}
+
+/* ==========================
+   BOTÃO TEMA
+========================== */
+
+#temaBtn{
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 65px;
+    height: 65px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,#f10000,#2563eb);
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 15px rgba(39, 55, 88, 0.4);
+
+    transition: .3s;
+}
+
+#temaBtn:hover{
+    transform: scale(1.1);
+}
+
+#iconeTema{
+    width: 35px;
+}
+
+/* ==========================
+   INSTAGRAM
+========================== */
+
+#logoinstagram{
+    position: fixed;
+
+    left: 15px;
+    bottom: 100px;
+
+    width: 60px;
+    height: 60px;
+
+    transition: .3s;
+}
+
+#logoinstagram:hover{
+    transform: scale(1.1);
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+
+footer{
+    margin-top: 50px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: white;
+
+    box-shadow: 0 -2px 10px rgba(0,0,0,.1);
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+    #titulo1{
+        font-size: 2.5rem;
+    }
+
+    #titulo2{
+        font-size: 1.8rem;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .imagens2 img{
+        width: 90%;
+        height: auto;
+    }
+
+    #temaBtn{
+        width: 55px;
+        height: 55px;
+    }
+
+    #logoinstagram{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.sobre-mim{
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+
+    line-height: 1.8;
+
+    font-size: 18px;
+}
+
+.dark-mode .sobre-mim{
+    background-color: #1f1f1f;
+}
+
+.foto-perfil{
+    display: block;
+
+    width: 300px;
+
+    margin: 30px auto 0 auto;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+}
+
+.sobre-mim{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.dark-mode .sobre-mim{
+    background-color: #1f1f1f;
+}
+
+.foto-perfil{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+}
+
+
+.curriculo{
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.dark-mode .curriculo{
+    background: #1f1f1f;
+}
+
+.curriculo h3{
+    color: #4309ad;
+
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.curriculo p{
+    margin-bottom: 15px;
+}
+
+.curriculo ul{
+    margin-left: 25px;
+}
+
+.curriculo li{
+    margin-bottom: 10px;
+}
+
+.tabela-curriculo{
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-bottom: 20px;
+}
+
+.tabela-curriculo th{
+    background: #4309ad;
+    color: white;
+}
+
+.tabela-curriculo th,
+.tabela-curriculo td{
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-curriculo tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+.dark-mode .tabela-curriculo tr:nth-child(even){
+    background-color: #2a2a2a;
+}
+
+.cabecalho-curriculo{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.foto-curriculo{
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #f10000;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+.cabecalho-curriculo #titulo2{
+    margin: 0;
+}
+
+
+.foto-curriculo{
+    position: absolute;
+
+    top: 20px;
+    right: 80px;
+
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #f10000;
+
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+}
+
+/* ==========================
+   CONTATO
+========================== */
+
+.contato{
+    max-width: 800px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+}
+
+.dark-mode .contato{
+    background: #1f1f1f;
+}
+
+.contato form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.contato input,
+.contato textarea{
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.contato textarea{
+    resize: vertical;
+}
+
+.contato button{
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #f10000,
+        #4325eb
+    );
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.contato button:hover{
+    transform: translateY(-2px);
+}
+
+.receitas{
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.receita-card{
+    width: 280px;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+
+    transition: .3s;
+}
+
+.receita-card:hover{
+    transform: translateY(-5px);
+}
+
+.receita-card h3{
+    color: #f10000;
+
+    margin-bottom: 10px;
+}
+
+.receita-card a{
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 10px 15px;
+
+    background: #f10000;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+.dark-mode .receita-card{
+    background: #1f1f1f;
+}
+
+/* ==========================
+   RECEITA COMPLETA
+========================== */
+
+.receita-completa{
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 6px 20px rgba(39, 55, 88, 0.4);
+
+    line-height: 1.8;
+}
+
+.dark-mode .receita-completa{
+    background: #1f1f1f;
+}
+
+.receita-completa section{
+    margin-bottom: 30px;
+}
+
+.receita-completa h3{
+    color: #f10000;
+
+    margin-bottom: 15px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid #f10000;
+}
+
+.receita-completa p{
+    text-align: justify;
+}
+
+.receita-completa ul{
+    margin-left: 25px;
+
+    background: #f5f7ff;
+
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+.dark-mode .receita-completa ul{
+    background: #2a2a2a;
+}
+
+.receita-completa li{
+    margin-bottom: 10px;
+}
+
+.receita-completa ol{
+    margin-left: 25px;
+
+    background: #f8f8f8;
+
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+.dark-mode .receita-completa ol{
+    background: #2a2a2a;
+}
+
+.voltar{
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    background: linear-gradient(
+        135deg,
+        #f10000,
+        #2563eb
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.voltar:hover{
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(39, 55, 88, 0.4);
+}
+.btn-home{
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 20px;
+
+    background: linear-gradient(135deg, #f10000, #1d4ed8);
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(39, 55, 88, 0.4);
+
+    transition: all 0.3s ease;
+}
+
+.btn-home:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(39, 55, 88, 0.4);
+}
+
+.btn-home:active{
+    transform: translateY(1px);
+}
+
+#acessibilidade{
+    position: fixed;
+
+    right: 20px;
+    bottom: 100px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    z-index: 9999;
+}
+
+#acessibilidade button{
+    width: 60px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #f10000,
+        #2563eb
+    );
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow: 0 4px 12px rgba(39, 55, 88, 0.4);
+}
+
+#acessibilidade button:hover{
+    transform: scale(1.08);
+}
+
+/* ==========================
+   MÚSICAS
+========================== */
+
+#titulo-musicas{
+
+    text-align: center;
+
+    font-size: 70px;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    color: #f10000;
+
+    font-weight: 900;
+
+    text-shadow:
+        0 4px 12px rgba(39, 55, 88, 0.4);
+
+    animation: aparecer 1s ease;
+}
+
+.playlist{
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.playlist iframe{
+
+    width: 100%;
+
+    height: 152px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(39, 55, 88, 0.4);
+
+    transition: .3s;
+}
+
+.playlist iframe:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(39, 55, 88, 0.4);
+}
+
+.dark-mode #titulo-musicas{
+
+    color: white;
+}
